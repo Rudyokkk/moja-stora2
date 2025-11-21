@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BanditShop | Grafika i Montaż</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0a0a0f;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #a259ff;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h2 {
+      text-align: center;
+      color: #a259ff;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    .about p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #ccc;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #a259ff;
+    }
+
+    .offer ul {
+      list-style: none;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .offer li {
+      background: rgba(162, 89, 255, 0.1);
+      margin: 10px 0;
+      padding: 15px 20px;
+      border-left: 4px solid #a259ff;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      color: #ddd;
+      transition: transform 0.2s ease;
+    }
+
+    .offer li:hover {
+      transform: translateX(5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #0f0f14;
+      border-top: 1px solid #222;
+    }
+
+    footer p {
+      color: #aaa;
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #a259ff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BanditShop</h1>
+    <p>Grafika • Montaż • Kreatywność</p>
+  </header>
+
+  <section class="about" id="about">
+    <h2>O mnie</h2>
+    <p>
+      Cześć! Jestem młodym twórcą pasjonującym się grafiką i montażem wideo. 
+      Pracuję w Photoshopie i Premiere Pro, tworząc nowoczesne projekty dla YouTuberów i twórców internetowych.  
+      Każdy projekt to dla mnie okazja, by połączyć kreatywność z profesjonalnym stylem. 💪
+    </p>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <img src="https://picsum.photos/400/250?random=1" alt="Projekt 1">
+      <img src="https://picsum.photos/400/250?random=2" alt="Projekt 2">
+      <img src="https://picsum.photos/400/250?random=3" alt="Projekt 3">
+      <img src="https://picsum.photos/400/250?random=4" alt="Projekt 4">
+    </div>
+  </section>
+
+  <section class="offer" id="offer">
+    <h2>Oferta</h2>
+    <ul>
+      <li>🎨 Miniaturka YouTube — od 15 zł</li>
+      <li>🎥 Montaż shorta lub reelsa — od 30 zł</li>
+      <li>🖼️ Banner / logo — od 20 zł</li>
+      <li>✨ Pierwszy projekt GRATIS!</li>
+    </ul>
+  </section>
+
+  <footer id="contact">
+    <h2>Kontakt</h2>
+    <p>📧 E-mail: <a href="#">tu-wstaw-swoj-email</a></p>
+    <p>💬 Discord: <a href="#">tu-wstaw-swoj-discord</a></p>
+    <p>📱 Instagram: <a href="#">@banditshop</a></p>
+    <p>© 2025 BanditShop. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+
+</body>
+</html>
